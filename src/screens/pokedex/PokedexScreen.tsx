@@ -25,7 +25,7 @@ export function PokedexScreen({ navigation }: StackScreenProps<ParamListBase>) {
   }, [dispatch, getPokemonPage, navigation]);
   return (
     <Center height="full">
-      {pokemons.length > 0 && (
+      {pokemons && pokemons.length > 0 && (
         <FlatList
           width="full"
           data={pokemons}
