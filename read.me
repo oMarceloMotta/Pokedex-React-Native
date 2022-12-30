@@ -1,0 +1,17 @@
+https://pokeapi.co/
+
+https://beta.pokeapi.co/graphql/console/
+
+query samplePokeAPIquery {
+  pokemon_v2_pokemon {
+    name
+    id
+    pokemon_v2_pokemonsprites {
+      pokemon_v2_pokemon {
+        name
+        id
+      }
+      sprites
+    }
+  }
+}
